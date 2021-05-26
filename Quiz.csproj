@@ -59,6 +59,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="AnswerAlternatives.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -93,6 +94,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\img1.jpg" />
+    <Resource Include="Images\img10.jpg" />
+    <Resource Include="Images\img11.jpg" />
+    <Resource Include="Images\img12.jpg" />
+    <Resource Include="Images\img13.jpg" />
+    <Resource Include="Images\img2.jpg" />
+    <Resource Include="Images\img3.jpg" />
+    <Resource Include="Images\img4.jpg" />
+    <Resource Include="Images\img5.jpg" />
+    <Resource Include="Images\img6.jpg" />
+    <Resource Include="Images\img7.jpg" />
+    <Resource Include="Images\img8.jpg" />
+    <Resource Include="Images\img9.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

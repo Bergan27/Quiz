@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Quiz"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="ShipmanufacturersQuiz" Height="900" Width="1300">
+    <Canvas x:Name="myCanvas" Background="AliceBlue">
+        <Label Name="scoretext" FontSize="18" RenderTransformOrigin="0.715,4.268" Canvas.Left="520" Canvas.Top="689">Score: 0/10</Label>
+        <Label Name="questionOrder" FontSize="18" Canvas.Left="350">Questions</Label>
+        <Image Name="qImage" Source="Images/img1.jpg" Stretch="Uniform" Height="570" Width="972" Canvas.Left="172"/>
+        <TextBlock x:Name="txtquestion" TextAlignment="Center" Padding="3" FontSize="20" Width="500" TextWrapping="Wrap" Canvas.Left="330" Canvas.Top="585">
+            Försök att gissa tillverkaren som står bakom båten
+        </TextBlock>
+        <Button Background="DarkGoldenrod" FontSize="18" Click="checkAnswer" x:Name="ans1" Width="200" Height="50" Content="Answer 1" Tag="0" Canvas.Left="105" Canvas.Top="633"/>
+        <Button Background="DarkGoldenrod" FontSize="18" Click="checkAnswer" x:Name="ans2" Width="200" Height="50" Content="Answer 2" Tag="0" Canvas.Left="350" Canvas.Top="633"/>
+        <Button Background="DarkGoldenrod" FontSize="18" Click="checkAnswer" x:Name="ans3" Width="200" Height="50" Content="Answer 3" Tag="0" Canvas.Left="834" Canvas.Top="633"/>
+        <Button Background="DarkGoldenrod" FontSize="18" Click="checkAnswer" x:Name="ans4" Width="200" Height="50" Content="Answer 4" Tag="0" Canvas.Left="602" Canvas.Top="633"/>
+    </Canvas>
 </Window>
